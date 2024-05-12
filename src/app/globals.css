@@ -140,10 +140,11 @@ background-color: var(--primary-color); /* プライマリカラーを背景色�
 color: var(--accent-color); /* アクセントカラーをテキストカラーに設定 */
 padding: 10px 20px;
 text-align: center;
+display: flex;
 }
 
 .logo img {
-width: 150px; /* ロゴのサイズ調整 */
+width: 50px; /* ロゴのサイズ調整 */
 }
 
 .navbar {
