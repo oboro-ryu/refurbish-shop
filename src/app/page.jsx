@@ -11,6 +11,12 @@ function MainComponent() {
         "images/reizouko/reizouko1/reizouko1-no1.jpg",
         "images/reizouko/reizouko1/reizouko1-no2.jpg",
         "images/reizouko/reizouko1/reizouko1-no3.jpg",
+        "images/reizouko/reizouko1/reizouko1-no4.jpg",
+        "images/reizouko/reizouko1/reizouko1-no5.jpg",
+        "images/reizouko/reizouko1/reizouko1-no6.jpg",
+        "images/reizouko/reizouko1/reizouko1-no7.jpg",
+        "images/reizouko/reizouko1/reizouko1-no8.jpg",
+        "images/reizouko/reizouko1/reizouko1-no9.jpg",
       ],
     },
     {
