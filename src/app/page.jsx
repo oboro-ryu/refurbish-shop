@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState } from "react"; 
 
 function MainComponent() {
   const products = [
@@ -65,6 +65,7 @@ function MainComponent() {
       images: [
         "images/reizouko/reizouko2/reizouko2-no1.jpg",
         "images/reizouko/reizouko2/reizouko2-no2.jpg",
+        "images/reizouko/reizouko2/reizouko2-no3.jpg",
       ],
     },
     {
@@ -94,88 +95,89 @@ function MainComponent() {
         "images/reizouko/reizouko2/reizouko2-no2.jpg",
       ],
     },
-    // More products...
   ];
-  
 
-
-
-  const [filter, setFilter] = useState("");
   const [selectedProduct, setSelectedProduct] = useState(null);
-
-  const handleSearchChange = (e) => {
-    setFilter(e.target.value);
-  };
-
+  const [filter, setFilter] = useState("");
   const handleViewDetails = (product) => {
     setSelectedProduct(product);
   };
-
-  const filteredProducts = products.filter((product) =>
-    product.name.toLowerCase().includes(filter.toLowerCase())
-  );
+  const handleChange = (event) => {
+    setFilter(event.target.value);
+  };
+  const filteredProducts = filter
+    ? products.filter((product) =>
+        product.name.toLowerCase().includes(filter.toLowerCase())
+      )
+    : products;
 
   return (
     <div>
       {/* Header Section */}
       <div className="header_section">
-        <nav className="bg-light">
-          <div className="container">
-            <a className="logo" href="#">
-              <img src="images/other/logo.png" alt="BAMBI" />
-            </a>
+        
             <div className="line-link-container">
               購入検討の方は<a href="https://page.line.me/452dbzcb" className="line-link">公式LINE</a>から
             </div>
-          </div>
-        </nav>
       </div>
-
-      {/* Main Component Content */}
+      {/* <header className="bg-gray-200 p-4 text-center font-bold text-lg">
+        商品リスト
+      </header> */}
+      <input
+        type="text"
+        onChange={handleChange}
+        placeholder="商品名で検索"
+        className="border border-gray-500 p-2 m-4"
+        name="productFilter"
+      />
       <div className="container mx-auto p-4">
-        <div>
-          <input
-            type="text"
-            placeholder="商品名で検索..."
-            className="p-2 border border-gray-300 rounded w-full mb-4"
-            onChange={handleSearchChange}
-            name="productSearch"
-          />
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {filteredProducts.map((product) => (
-            <div key={product.id} className="p-4 border border-gray-300 rounded">
+        {selectedProduct ? (
+          <div className="p-4 border border-gray-300 rounded">
+            <img
+              src={selectedProduct.images[0]}
+              alt={`Main Image of ${selectedProduct.name}`}
+              className="w-full h-[300px] object-cover mb-4"
+            />
+            <h2 className="text-lg font-bold mb-1">{selectedProduct.name}</h2>
+            <p>{selectedProduct.brand}</p>
+            {selectedProduct.images.map((image, index) => (
               <img
-                src={product.images[0]} // Display the first image in the list
-                alt={`Product Image: ${product.name}`}
+                key={index}
+                src={image}
+                alt={`additional view ${index + 1} of ${selectedProduct.name}`}
                 className="w-full h-[200px] object-cover mb-2"
               />
-              <h2 className="text-lg font-semibold mb-1">{product.name}</h2>
+            ))}
+            <button
+              className="mt-2 py-2 px-4 border rounded bg-blue-500 text-white hover:bg-blue-600"
+              onClick={() => setSelectedProduct(null)}
+            >
+              Close
+            </button>
+          </div>
+        ) : (
+          filteredProducts.map((product) => (
+            <div
+              key={product.id}
+              className="p-4 border border-gray-300 rounded"
+            >
+              <img
+                src={product.images[0]}
+                alt={`Product Image of ${product.name}`}
+                className="w-full h-[200px] object-cover mb-2"
+              />
+              <h2 className="text-lg font-bold mb-1">{product.name}</h2>
               <p className="text-gray-500">{product.brand}</p>
               <button
-                className="mt-2 py-2 px-4 border rounded bg-blue-500 text-white hover:bg-blue-600"
+                className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600"
                 onClick={() => handleViewDetails(product)}
               >
                 View Details
               </button>
             </div>
-          ))}
-        </div>
+          ))
+        )}
       </div>
-
-      {/* Product Details Modal or Inline Display */}
-      {selectedProduct && (
-        <div className="product-details-modal">
-          <h2>{selectedProduct.name}</h2>
-          <div className="image-gallery">
-            {selectedProduct.images.map((image, index) => (
-              <img key={index} src={image} alt={`Detail ${index + 1}`} className="detail-image" />
-            ))}
-          </div>
-          <p>{selectedProduct.brand}</p>
-          <button onClick={() => setSelectedProduct(null)}>Close</button>
-        </div>
-      )}
     </div>
   );
 }
