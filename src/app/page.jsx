@@ -11,13 +11,9 @@ function MainComponent() {
         "images/reizouko/reizouko1/reizouko1-no1.jpg",
         "images/reizouko/reizouko1/reizouko1-no2.jpg",
         "images/reizouko/reizouko1/reizouko1-no3.jpg",
-        "images/reizouko/reizouko1/reizouko1-no4.jpg",
-        "images/reizouko/reizouko1/reizouko1-no5.jpg",
-        "images/reizouko/reizouko1/reizouko1-no6.jpg",
-        "images/reizouko/reizouko1/reizouko1-no7.jpg",
-        "images/reizouko/reizouko1/reizouko1-no8.jpg",
-        "images/reizouko/reizouko1/reizouko1-no9.jpg",
       ],
+      price: "¥50,000",
+      category: "冷蔵庫",
     },
     {
       id: 2,
@@ -27,6 +23,8 @@ function MainComponent() {
         "images/reizouko/reizouko2/reizouko2-no1.jpg",
         "images/reizouko/reizouko2/reizouko2-no2.jpg",
       ],
+      price: "¥30,000",
+      category: "冷蔵庫",
     },
     {
       id: 3,
@@ -36,6 +34,8 @@ function MainComponent() {
         "images/reizouko/reizouko2/reizouko2-no1.jpg",
         "images/reizouko/reizouko2/reizouko2-no2.jpg",
       ],
+      price: "¥40,000",
+      category: "冷蔵庫",
     },
     {
       id: 4,
@@ -45,6 +45,8 @@ function MainComponent() {
         "images/reizouko/reizouko2/reizouko2-no1.jpg",
         "images/reizouko/reizouko2/reizouko2-no2.jpg",
       ],
+      price: "¥25,000",
+      category: "冷蔵庫",
     },
     {
       id: 5,
@@ -54,81 +56,85 @@ function MainComponent() {
         "images/reizouko/reizouko2/reizouko2-no1.jpg",
         "images/reizouko/reizouko2/reizouko2-no2.jpg",
       ],
+      price: "¥20,000",
+      category: "冷蔵庫",
     },
     {
       id: 6,
       name: "ハイセンス 2ドア 2020年やや傷あり",
       brand: "Hisense",
-      images: [
-        "images/reizouko/reizouko2/reizouko2-no1.jpg",
-        "images/reizouko/reizouko2/reizouko2-no2.jpg",
-      ],
+      images: ["images/reizouko/reizouko2/reizouko2-no1.jpg"],
+      price: "¥15,000",
+      category: "洗濯機",
     },
     {
       id: 7,
       name: "SHARP 5ドア 2018年",
       brand: "SHARP",
-      images: [
-        "images/reizouko/reizouko2/reizouko2-no1.jpg",
-        "images/reizouko/reizouko2/reizouko2-no2.jpg",
-        "images/reizouko/reizouko2/reizouko2-no3.jpg",
-      ],
+      images: ["images/reizouko/reizouko2/reizouko2-no2.jpg"],
+      price: "¥45,000",
+      category: "洗濯機",
     },
     {
       id: 8,
       name: "三菱 2ドア 146L 2019年",
       brand: "Mitsubishi",
-      images: [
-        "images/reizouko/reizouko2/reizouko2-no1.jpg",
-        "images/reizouko/reizouko2/reizouko2-no2.jpg",
-      ],
+      images: ["images/reizouko/reizouko2/reizouko2-no1.jpg"],
+      price: "¥35,000",
+      category: "洗濯機",
     },
     {
       id: 9,
       name: "SHARP 2ドア 2020年",
       brand: "SHARP",
-      images: [
-        "images/reizouko/reizouko2/reizouko2-no1.jpg",
-        "images/reizouko/reizouko2/reizouko2-no2.jpg",
-      ],
+      images: ["images/reizouko/reizouko2/reizouko2-no2.jpg"],
+      price: "¥32,000",
+      category: "洗濯機",
     },
     {
       id: 10,
       name: "TOSHIBA 2ドア 2019年",
       brand: "Toshiba",
-      images: [
-        "images/reizouko/reizouko2/reizouko2-no1.jpg",
-        "images/reizouko/reizouko2/reizouko2-no2.jpg",
-      ],
+      images: ["images/reizouko/reizouko2/reizouko2-no1.jpg"],
+      price: "¥28,000",
+      category: "洗濯機",
     },
   ];
-
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [filter, setFilter] = useState("");
+  const [filterCategory, setFilterCategory] = useState("");
+
   const handleViewDetails = (product) => {
     setSelectedProduct(product);
   };
   const handleChange = (event) => {
     setFilter(event.target.value);
   };
-  const filteredProducts = filter
-    ? products.filter((product) =>
-        product.name.toLowerCase().includes(filter.toLowerCase())
-      )
-    : products;
+
+  const handleCategoryChange = (event) => {
+    setFilterCategory(event.target.value);
+  };
+
+  const filteredProducts = products.filter((product) => {
+    const nameMatch = product.name.toLowerCase().includes(filter.toLowerCase());
+    const categoryMatch = filterCategory
+      ? product.category === filterCategory
+      : true;
+    return nameMatch && categoryMatch;
+  });
 
   return (
     <div>
-      {/* Header Section */}
+       {/* Header Section */}
       <div className="header_section">
         
             <div className="line-link-container">
               購入検討の方は<a href="https://page.line.me/452dbzcb" className="line-link">公式LINE</a>から
             </div>
       </div>
-      {/* <header className="bg-gray-200 p-4 text-center font-bold text-lg">
-        商品リスト
-      </header> */}
+  {/* <header className="bg-gray-200 p-4 text-center font-bold text-lg">
+    商品リスト
+  </header> */}
       <input
         type="text"
         onChange={handleChange}
@@ -136,30 +142,52 @@ function MainComponent() {
         className="border border-gray-500 p-2 m-4"
         name="productFilter"
       />
+      <select
+        onChange={handleCategoryChange}
+        className="border border-gray-500 p-2 m-4"
+        name="categoryFilter"
+      >
+        <option value="">すべて</option>
+        <option value="冷蔵庫">冷蔵庫</option>
+        <option value="洗濯機">洗濯機</option>
+      </select>
       <div className="container mx-auto p-4">
         {selectedProduct ? (
-          <div className="p-4 border border-gray-300 rounded">
-            <img
-              src={selectedProduct.images[0]}
-              alt={`Main Image of ${selectedProduct.name}`}
-              className="w-full h-[300px] object-cover mb-4"
-            />
-            <h2 className="text-lg font-bold mb-1">{selectedProduct.name}</h2>
-            <p>{selectedProduct.brand}</p>
-            {selectedProduct.images.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`additional view ${index + 1} of ${selectedProduct.name}`}
-                className="w-full h-[200px] object-cover mb-2"
-              />
-            ))}
+          <div>
             <button
               className="mt-2 py-2 px-4 border rounded bg-blue-500 text-white hover:bg-blue-600"
               onClick={() => setSelectedProduct(null)}
             >
               Close
             </button>
+            <div
+              key={selectedProduct.id}
+              className="p-4 border border-gray-300 rounded"
+            >
+              <img
+                src={selectedProduct.images[0]}
+                alt={`Main Image of ${selectedProduct.name}`}
+                className="w-full h-[300px] object-cover mb-4"
+              />
+              <h2 className="text-lg font-bold mb-1">
+                {selectedProduct.name} ({selectedProduct.category})
+              </h2>
+              <p>{selectedProduct.brand}</p>
+              {selectedProduct.images.map((image, index) => (
+                <img
+                  key={index}
+                  src={image}
+                  alt={`additional view ${index + 1} of ${
+                    selectedProduct.name
+                  }`}
+                  className="w-full h-[200px] object-cover mb-2"
+                />
+              ))}
+              <p>{selectedProduct.price}</p>
+              <button className="mt-2 py-2 px-4 border rounded bg-green-500 text-white hover:bg-green-600">
+                Purchase
+              </button>
+            </div>
           </div>
         ) : (
           filteredProducts.map((product) => (
@@ -172,8 +200,11 @@ function MainComponent() {
                 alt={`Product Image of ${product.name}`}
                 className="w-full h-[200px] object-cover mb-2"
               />
-              <h2 className="text-lg font-bold mb-1">{product.name}</h2>
+              <h2 className="text-lg font-bold mb-1">
+                {product.name} ({product.category})
+              </h2>
               <p className="text-gray-500">{product.brand}</p>
+              <p>{product.price}</p>
               <button
                 className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600"
                 onClick={() => handleViewDetails(product)}
