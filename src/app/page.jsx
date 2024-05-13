@@ -5,8 +5,7 @@ function MainComponent() {
   const products = [
     {
       id: 1,
-      name: "Panasonic 2ドア マットビターブラウン ※素材上やや傷あり",
-      brand: "Panasonic",
+      name: "Panasonic 2ドア マットビターブラウン 2020年製※素材上やや傷あり",
       images: [
         "images/reizouko/reizouko1/reizouko1-no1.jpg",
         "images/reizouko/reizouko1/reizouko1-no2.jpg",
@@ -23,25 +22,35 @@ function MainComponent() {
     },
     {
       id: 2,
-      name: "ハイセンス 2ドア 2022年(凹み多数)",
-      brand: "Hisense",
+      name: "SHARP ガラス 2021年製 ¥32,000",
       images: [
         "images/reizouko/reizouko2/reizouko2-no1.jpg",
         "images/reizouko/reizouko2/reizouko2-no2.jpg",
+        "images/reizouko/reizouko2/reizouko2-no3.jpg",
+        "images/reizouko/reizouko2/reizouko2-no4.jpg",
+        "images/reizouko/reizouko2/reizouko2-no5.jpg",
+        "images/reizouko/reizouko2/reizouko2-no6.jpg",
+        "images/reizouko/reizouko2/reizouko2-no7.jpg",
+        "images/reizouko/reizouko2/reizouko2-no8.jpg",
+        "images/reizouko/reizouko2/reizouko2-no9.jpg",
       ],
-      price: "¥30,000",
+      price: "¥32,000",
       category: "冷蔵庫",
     },
     {
       id: 3,
-      name: "Panasonic 2ドア 2020年",
-      brand: "Panasonic",
+      name: "TOSHIBA 4.5kg 2023年製※美品",
       images: [
-        "images/reizouko/reizouko2/reizouko2-no1.jpg",
-        "images/reizouko/reizouko2/reizouko2-no2.jpg",
+        "images/sentakuki/sentakuki1/sentakuki1-no1.jpg",
+        "images/sentakuki/sentakuki1/sentakuki1-no2.jpg",
+        "images/sentakuki/sentakuki1/sentakuki1-no3.jpg",
+        "images/sentakuki/sentakuki1/sentakuki1-no4.jpg",
+        "images/sentakuki/sentakuki1/sentakuki1-no5.jpg",
+        "images/sentakuki/sentakuki1/sentakuki1-no6.jpg",
+        "images/sentakuki/sentakuki1/sentakuki1-no7.jpg",
       ],
-      price: "¥40,000",
-      category: "冷蔵庫",
+      price: "¥25,000",
+      category: "洗濯機",
     },
     {
       id: 4,
@@ -211,7 +220,7 @@ function MainComponent() {
               ))}
               <p>{selectedProduct.price}</p>
               <button className="mt-2 py-2 px-4 border rounded bg-green-500 text-white hover:bg-green-600">
-                Purchase
+                <a href="https://page.line.me/452dbzcb" className="line-link">公式LINE</a>
               </button>
             </div>
           </div>
