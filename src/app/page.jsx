@@ -5,14 +5,20 @@ function MainComponent() {
   const products = [
     {
       id: 1,
-      name: "YAMADA 2ドア 2023年",
-      brand: "YAMADA",
+      name: "Panasonic 2ドア マットビターブラウン ※素材上やや傷あり",
+      brand: "Panasonic",
       images: [
         "images/reizouko/reizouko1/reizouko1-no1.jpg",
         "images/reizouko/reizouko1/reizouko1-no2.jpg",
         "images/reizouko/reizouko1/reizouko1-no3.jpg",
+        "images/reizouko/reizouko1/reizouko1-no4.jpg",
+        "images/reizouko/reizouko1/reizouko1-no5.jpg",
+        "images/reizouko/reizouko1/reizouko1-no6.jpg",
+        "images/reizouko/reizouko1/reizouko1-no7.jpg",
+        "images/reizouko/reizouko1/reizouko1-no8.jpg",
+        "images/reizouko/reizouko1/reizouko1-no9.jpg",
       ],
-      price: "¥50,000",
+      price: "¥23,000",
       category: "冷蔵庫",
     },
     {
@@ -100,9 +106,11 @@ function MainComponent() {
       category: "洗濯機",
     },
   ];
+
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [filter, setFilter] = useState("");
   const [filterCategory, setFilterCategory] = useState("");
+  const [priceFilter, setPriceFilter] = useState(100000);
 
   const handleViewDetails = (product) => {
     setSelectedProduct(product);
@@ -110,31 +118,33 @@ function MainComponent() {
   const handleChange = (event) => {
     setFilter(event.target.value);
   };
-
   const handleCategoryChange = (event) => {
     setFilterCategory(event.target.value);
   };
+  const handlePriceChange = (event) => {
+    setPriceFilter(Number(event.target.value));
+  };
+
+  const priceAsNumber = (price) => Number(price.replace(/[¥,]/g, ""));
 
   const filteredProducts = products.filter((product) => {
     const nameMatch = product.name.toLowerCase().includes(filter.toLowerCase());
     const categoryMatch = filterCategory
       ? product.category === filterCategory
       : true;
-    return nameMatch && categoryMatch;
+    const priceMatch = priceAsNumber(product.price) <= priceFilter;
+    return nameMatch && categoryMatch && priceMatch;
   });
 
   return (
     <div>
-       {/* Header Section */}
+      {/* Header Section */}
       <div className="header_section">
         
             <div className="line-link-container">
               購入検討の方は<a href="https://page.line.me/452dbzcb" className="line-link">公式LINE</a>から
             </div>
       </div>
-  {/* <header className="bg-gray-200 p-4 text-center font-bold text-lg">
-    商品リスト
-  </header> */}
       <input
         type="text"
         onChange={handleChange}
@@ -151,12 +161,28 @@ function MainComponent() {
         <option value="冷蔵庫">冷蔵庫</option>
         <option value="洗濯機">洗濯機</option>
       </select>
+      <div className="flex items-center justify-between mx-4">
+        <span className="text-[#333]">¥0</span>
+        <input
+          type="range"
+          min="0"
+          max="100000"
+          value={priceFilter}
+          onChange={handlePriceChange}
+          className="w-[80%]"
+          name="priceRangeSlider"
+        />
+        <span className="text-[#333]">¥100,000</span>
+      </div>
+      <div className="text-center font-semibold text-lg mb-4">
+        選択中の金額: ¥{priceFilter.toLocaleString()}
+      </div>
       <div className="container mx-auto p-4">
         {selectedProduct ? (
           <div>
             <button
-              className="mt-2 py-2 px-4 border rounded bg-blue-500 text-white hover:bg-blue-600"
               onClick={() => setSelectedProduct(null)}
+              className="mt-2 py-2 px-4 border rounded bg-blue-500 text-white hover:bg-blue-600"
             >
               Close
             </button>
@@ -164,14 +190,14 @@ function MainComponent() {
               key={selectedProduct.id}
               className="p-4 border border-gray-300 rounded"
             >
+              <h2 className="text-lg font-bold mb-1">
+                {selectedProduct.name} ({selectedProduct.category})
+              </h2>
               <img
                 src={selectedProduct.images[0]}
                 alt={`Main Image of ${selectedProduct.name}`}
                 className="w-full h-[300px] object-cover mb-4"
               />
-              <h2 className="text-lg font-bold mb-1">
-                {selectedProduct.name} ({selectedProduct.category})
-              </h2>
               <p>{selectedProduct.brand}</p>
               {selectedProduct.images.map((image, index) => (
                 <img
@@ -193,7 +219,7 @@ function MainComponent() {
           filteredProducts.map((product) => (
             <div
               key={product.id}
-              className="p-4 border border-gray-300 rounded"
+              className="p-4 border border-gray-300 rounded mb-4"
             >
               <img
                 src={product.images[0]}
@@ -206,8 +232,8 @@ function MainComponent() {
               <p className="text-gray-500">{product.brand}</p>
               <p>{product.price}</p>
               <button
-                className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600"
                 onClick={() => handleViewDetails(product)}
+                className="py-2 px-4 bg-blue-500 text-white rounded hover:bg-blue-600"
               >
                 View Details
               </button>
