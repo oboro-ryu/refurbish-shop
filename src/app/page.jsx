@@ -308,7 +308,7 @@ function MainComponent() {
     },
     {
       id: 19,
-      name: "Panasonic 2020年",
+      name: "Panasonic 2ドア 2020年",
       images: [
       "images/reizouko/reizouko11/reizouko11-no1.jpg",
       "images/reizouko/reizouko11/reizouko11-no2.jpg",
@@ -321,6 +321,37 @@ function MainComponent() {
       "images/reizouko/reizouko11/reizouko11-no9.jpg",
       ],
       price: "¥27,000",
+      category: "冷蔵庫",
+    },
+    {
+      id: 20,
+      name: "A-Stage 1ドア 2018年",
+      images: [
+      "images/reizouko/reizouko12/reizouko12-no1.jpg",
+      "images/reizouko/reizouko12/reizouko12-no2.jpg",
+      "images/reizouko/reizouko12/reizouko12-no3.jpg",
+      "images/reizouko/reizouko12/reizouko12-no4.jpg",
+      "images/reizouko/reizouko12/reizouko12-no5.jpg",
+      "images/reizouko/reizouko12/reizouko12-no6.jpg",
+      "images/reizouko/reizouko12/reizouko12-no7.jpg",
+      ],
+      price: "¥4,000",
+      category: "冷蔵庫",
+    },
+    {
+      id: 21,
+      name: "アビテラックス ミニ2ドア 2015年",
+      images: [
+      "images/reizouko/reizouko13/reizouko13-no1.jpg",
+      "images/reizouko/reizouko13/reizouko13-no2.jpg",
+      "images/reizouko/reizouko13/reizouko13-no3.jpg",
+      "images/reizouko/reizouko13/reizouko13-no4.jpg",
+      "images/reizouko/reizouko13/reizouko13-no5.jpg",
+      "images/reizouko/reizouko13/reizouko13-no6.jpg",
+      "images/reizouko/reizouko13/reizouko13-no7.jpg",
+      "images/reizouko/reizouko13/reizouko13-no8.jpg",
+      ],
+      price: "¥4,000",
       category: "冷蔵庫",
     },
   ];
