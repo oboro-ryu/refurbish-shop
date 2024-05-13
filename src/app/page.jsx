@@ -202,6 +202,23 @@ function MainComponent() {
       price: "¥22,000",
       category: "洗濯機",
     },
+    {
+      id: 13,
+      name: "SHARP 8kg 2019年",
+      images: [
+      "images/sentakuki/sentakuki5/sentakuki5-no1.jpg",
+      "images/sentakuki/sentakuki5/sentakuki5-no2.jpg",
+      "images/sentakuki/sentakuki5/sentakuki5-no3.jpg",
+      "images/sentakuki/sentakuki5/sentakuki5-no4.jpg",
+      "images/sentakuki/sentakuki5/sentakuki5-no5.jpg",
+      "images/sentakuki/sentakuki5/sentakuki5-no6.jpg",
+      "images/sentakuki/sentakuki5/sentakuki5-no7.jpg",
+      "images/sentakuki/sentakuki5/sentakuki5-no8.jpg",
+      "images/sentakuki/sentakuki5/sentakuki5-no9.jpg",
+      ],
+      price: "¥36,000",
+      category: "洗濯機",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
