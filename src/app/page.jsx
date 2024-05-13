@@ -306,6 +306,23 @@ function MainComponent() {
       price: "¥19,000",
       category: "冷蔵庫",
     },
+    {
+      id: 19,
+      name: "Panasonic 2020年",
+      images: [
+      "images/reizouko/reizouko11/reizouko11-no1.jpg",
+      "images/reizouko/reizouko11/reizouko11-no2.jpg",
+      "images/reizouko/reizouko11/reizouko11-no3.jpg",
+      "images/reizouko/reizouko11/reizouko11-no4.jpg",
+      "images/reizouko/reizouko11/reizouko11-no5.jpg",
+      "images/reizouko/reizouko11/reizouko11-no6.jpg",
+      "images/reizouko/reizouko11/reizouko11-no7.jpg",
+      "images/reizouko/reizouko11/reizouko11-no8.jpg",
+      "images/reizouko/reizouko11/reizouko11-no9.jpg",
+      ],
+      price: "¥27,000",
+      category: "冷蔵庫",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
