@@ -187,7 +187,7 @@ function MainComponent() {
     },
     {
       id: 12,
-      name: "アイリス 6kg 2022年製※美品",
+      name: "アイリス 4.5kg 2023年製※美品",
       images: [
       "images/sentakuki/sentakuki4/sentakuki4-no1.jpg",
       "images/sentakuki/sentakuki4/sentakuki4-no2.jpg",
@@ -199,7 +199,7 @@ function MainComponent() {
       "images/sentakuki/sentakuki4/sentakuki4-no8.jpg",
       "images/sentakuki/sentakuki4/sentakuki4-no9.jpg",
       ],
-      price: "¥23,000",
+      price: "¥22,000",
       category: "洗濯機",
     },
   ];
