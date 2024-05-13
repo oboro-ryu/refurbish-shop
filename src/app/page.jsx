@@ -113,6 +113,26 @@ function MainComponent() {
       price: "¥23,000",
       category: "冷蔵庫",
     },
+    {
+      id: 8,
+      name: "コンフィー 2ドア 2023年※美品",
+      images: [
+      "images/reizouko/reizouko5/reizouko5-no1.jpg",
+      "images/reizouko/reizouko5/reizouko5-no2.jpg",
+      "images/reizouko/reizouko5/reizouko5-no3.jpg",
+      "images/reizouko/reizouko5/reizouko5-no4.jpg",
+      "images/reizouko/reizouko5/reizouko5-no5.jpg",
+      "images/reizouko/reizouko5/reizouko5-no6.jpg",
+      "images/reizouko/reizouko5/reizouko5-no7.jpg",
+      "images/reizouko/reizouko5/reizouko5-no8.jpg",
+      "images/reizouko/reizouko5/reizouko5-no9.jpg",
+      "images/reizouko/reizouko5/reizouko5-no10.jpg",
+      "images/reizouko/reizouko5/reizouko5-no11.jpg",
+      "images/reizouko/reizouko5/reizouko5-no12.jpg",
+      ],
+      price: "¥28,000",
+      category: "冷蔵庫",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
