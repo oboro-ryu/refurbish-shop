@@ -237,7 +237,7 @@ function MainComponent() {
     },
     {
       id: 15,
-      name: "-----------------",
+      name: "TOSHIBA 4.5kg 2023年製※美品",
       images: [
       "images/sentakuki/sentakuki7/sentakuki7-no1.jpg",
       "images/sentakuki/sentakuki7/sentakuki7-no2.jpg",
@@ -247,8 +247,9 @@ function MainComponent() {
       "images/sentakuki/sentakuki7/sentakuki7-no6.jpg",
       "images/sentakuki/sentakuki7/sentakuki7-no7.jpg",
       "images/sentakuki/sentakuki7/sentakuki7-no8.jpg",
+      "images/sentakuki/sentakuki7/sentakuki7-no9.jpg",
       ],
-      price: "¥19,000",
+      price: "¥25,000",
       category: "洗濯機",
     },
     {
@@ -264,6 +265,10 @@ function MainComponent() {
       "images/reizouko/reizouko9/reizouko9-no7.jpg",
       "images/reizouko/reizouko9/reizouko9-no8.jpg",
       "images/reizouko/reizouko9/reizouko9-no9.jpg",
+      "images/reizouko/reizouko9/reizouko9-no10.jpg",
+      "images/reizouko/reizouko9/reizouko9-no11.jpg",
+      "images/reizouko/reizouko9/reizouko9-no12.jpg",
+      "images/reizouko/reizouko9/reizouko9-no13.jpg",
       ],
       price: "¥88,000",
       category: "冷蔵庫",
