@@ -185,6 +185,23 @@ function MainComponent() {
       price: "¥24,000",
       category: "冷蔵庫",
     },
+    {
+      id: 12,
+      name: "アイリス 6kg 2022年製※美品",
+      images: [
+      "images/sentakuki/sentakuki4/sentakuki4-no1.jpg",
+      "images/sentakuki/sentakuki4/sentakuki4-no2.jpg",
+      "images/sentakuki/sentakuki4/sentakuki4-no3.jpg",
+      "images/sentakuki/sentakuki4/sentakuki4-no4.jpg",
+      "images/sentakuki/sentakuki4/sentakuki4-no5.jpg",
+      "images/sentakuki/sentakuki4/sentakuki4-no6.jpg",
+      "images/sentakuki/sentakuki4/sentakuki4-no7.jpg",
+      "images/sentakuki/sentakuki4/sentakuki4-no8.jpg",
+      "images/sentakuki/sentakuki4/sentakuki4-no9.jpg",
+      ],
+      price: "¥23,000",
+      category: "洗濯機",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
