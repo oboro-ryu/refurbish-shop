@@ -96,6 +96,23 @@ function MainComponent() {
       price: "¥23,000",
       category: "冷蔵庫",
     },
+    {
+      id: 7,
+      name: "アイリス 2ドア 2022年※美品",
+      images: [
+      "images/reizouko/reizouko4/reizouko4-no1.jpg",
+      "images/reizouko/reizouko4/reizouko4-no2.jpg",
+      "images/reizouko/reizouko4/reizouko4-no3.jpg",
+      "images/reizouko/reizouko4/reizouko4-no4.jpg",
+      "images/reizouko/reizouko4/reizouko4-no5.jpg",
+      "images/reizouko/reizouko4/reizouko4-no6.jpg",
+      "images/reizouko/reizouko4/reizouko4-no7.jpg",
+      "images/reizouko/reizouko4/reizouko4-no8.jpg",
+      "images/reizouko/reizouko4/reizouko4-no9.jpg",
+      ],
+      price: "¥23,000",
+      category: "冷蔵庫",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
