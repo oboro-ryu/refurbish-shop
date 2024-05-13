@@ -79,6 +79,21 @@ function MainComponent() {
       price: "¥20,000",
       category: "洗濯機",
     },
+    {
+      id: 6,
+      name: "ハイアール 2ドア 2022年※美品",
+      images: [
+      "images/reizouko/reizouko3/reizouko3-no1.jpg",
+      "images/reizouko/reizouko3/reizouko3-no2.jpg",
+      "images/reizouko/reizouko3/reizouko3-no3.jpg",
+      "images/reizouko/reizouko3/reizouko3-no4.jpg",
+      "images/reizouko/reizouko3/reizouko3-no5.jpg",
+      "images/reizouko/reizouko3/reizouko3-no6.jpg",
+      "images/reizouko/reizouko3/reizouko3-no7.jpg",
+      ],
+      price: "¥23,000",
+      category: "冷蔵庫",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
