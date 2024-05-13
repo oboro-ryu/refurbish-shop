@@ -22,7 +22,7 @@ function MainComponent() {
     },
     {
       id: 2,
-      name: "SHARP ガラス 2021年製 ¥32,000",
+      name: "SHARP ガラス 2021年製",
       images: [
         "images/reizouko/reizouko2/reizouko2-no1.jpg",
         "images/reizouko/reizouko2/reizouko2-no2.jpg",
