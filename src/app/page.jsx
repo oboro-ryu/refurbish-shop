@@ -67,7 +67,7 @@ function MainComponent() {
     },
     {
       id: 5,
-      name: "無印良品 5kg 2021年製",
+      name: "アイリス 6kg 2022年製※美品",
       images: [
       "images/sentakuki/sentakuki3/sentakuki3-no1.jpg",
       "images/sentakuki/sentakuki3/sentakuki3-no2.jpg",
@@ -75,8 +75,10 @@ function MainComponent() {
       "images/sentakuki/sentakuki3/sentakuki3-no4.jpg",
       "images/sentakuki/sentakuki3/sentakuki3-no5.jpg",
       "images/sentakuki/sentakuki3/sentakuki3-no6.jpg",
+      "images/sentakuki/sentakuki3/sentakuki3-no7.jpg",
+      "images/sentakuki/sentakuki3/sentakuki3-no8.jpg",
       ],
-      price: "¥20,000",
+      price: "¥23,000",
       category: "洗濯機",
     },
     {
