@@ -289,6 +289,23 @@ function MainComponent() {
       price: "¥19,000",
       category: "洗濯機",
     },
+    {
+      id: 18,
+      name: "SHARP 2ドア 2020年",
+      images: [
+      "images/reizouko/reizouko10/reizouko10-no1.jpg",
+      "images/reizouko/reizouko10/reizouko10-no2.jpg",
+      "images/reizouko/reizouko10/reizouko10-no3.jpg",
+      "images/reizouko/reizouko10/reizouko10-no4.jpg",
+      "images/reizouko/reizouko10/reizouko10-no5.jpg",
+      "images/reizouko/reizouko10/reizouko10-no6.jpg",
+      "images/reizouko/reizouko10/reizouko10-no7.jpg",
+      "images/reizouko/reizouko10/reizouko10-no8.jpg",
+      "images/reizouko/reizouko10/reizouko10-no9.jpg",
+      ],
+      price: "¥22,000",
+      category: "冷蔵庫",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
