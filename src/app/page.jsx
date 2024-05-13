@@ -219,6 +219,22 @@ function MainComponent() {
       price: "¥36,000",
       category: "洗濯機",
     },
+    {
+      id: 14,
+      name: "YAMADA 7kg 2022年",
+      images: [
+      "images/sentakuki/sentakuki6/sentakuki6-no1.jpg",
+      "images/sentakuki/sentakuki6/sentakuki6-no2.jpg",
+      "images/sentakuki/sentakuki6/sentakuki6-no3.jpg",
+      "images/sentakuki/sentakuki6/sentakuki6-no4.jpg",
+      "images/sentakuki/sentakuki6/sentakuki6-no5.jpg",
+      "images/sentakuki/sentakuki6/sentakuki6-no6.jpg",
+      "images/sentakuki/sentakuki6/sentakuki6-no7.jpg",
+      "images/sentakuki/sentakuki6/sentakuki6-no8.jpg",
+      ],
+      price: "¥27,000",
+      category: "洗濯機",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
