@@ -79,20 +79,6 @@ function MainComponent() {
       price: "¥20,000",
       category: "洗濯機",
     },
-    {
-      id: 5,
-      name: "無印良品 5kg 2021年製",
-      images: [
-      "images/sentakuki/sentakuki3/sentakuki3-no1.jpg",
-      "images/sentakuki/sentakuki3/sentakuki3-no2.jpg",
-      "images/sentakuki/sentakuki3/sentakuki3-no3.jpg",
-      "images/sentakuki/sentakuki3/sentakuki3-no4.jpg",
-      "images/sentakuki/sentakuki3/sentakuki3-no5.jpg",
-      "images/sentakuki/sentakuki3/sentakuki3-no6.jpg",
-      ],
-      price: "¥20,000",
-      category: "洗濯機",
-    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
