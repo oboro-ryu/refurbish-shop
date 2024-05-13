@@ -39,17 +39,15 @@ function MainComponent() {
     },
     {
       id: 3,
-      name: "TOSHIBA 4.5kg 2023年製※美品",
+      name: "ツインバード 5.5kg 2021年製 ",
       images: [
         "images/sentakuki/sentakuki1/sentakuki1-no1.jpg",
         "images/sentakuki/sentakuki1/sentakuki1-no2.jpg",
         "images/sentakuki/sentakuki1/sentakuki1-no3.jpg",
         "images/sentakuki/sentakuki1/sentakuki1-no4.jpg",
         "images/sentakuki/sentakuki1/sentakuki1-no5.jpg",
-        "images/sentakuki/sentakuki1/sentakuki1-no6.jpg",
-        "images/sentakuki/sentakuki1/sentakuki1-no7.jpg",
       ],
-      price: "¥25,000",
+      price: "¥20,000",
       category: "洗濯機",
     },
     {
