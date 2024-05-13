@@ -22,7 +22,7 @@ function MainComponent() {
     },
     {
       id: 2,
-      name: "SHARP ガラス 2021年製",
+      name: "ハイセンス 2ドア 2020年製※やや傷あり",
       images: [
         "images/reizouko/reizouko2/reizouko2-no1.jpg",
         "images/reizouko/reizouko2/reizouko2-no2.jpg",
@@ -34,7 +34,7 @@ function MainComponent() {
         "images/reizouko/reizouko2/reizouko2-no8.jpg",
         "images/reizouko/reizouko2/reizouko2-no9.jpg",
       ],
-      price: "¥32,000",
+      price: "¥24,000",
       category: "冷蔵庫",
     },
     {
@@ -65,6 +65,20 @@ function MainComponent() {
         "images/sentakuki/sentakuki2/sentakuki2-no7.jpg",
       ],
       price: "¥24,000",
+      category: "洗濯機",
+    },
+    {
+      id: 5,
+      name: "無印良品 5kg 2021年製",
+      images: [
+      "images/sentakuki/sentakuki3/sentakuki3-no1.jpg",
+      "images/sentakuki/sentakuki3/sentakuki3-no2.jpg",
+      "images/sentakuki/sentakuki3/sentakuki3-no3.jpg",
+      "images/sentakuki/sentakuki3/sentakuki3-no4.jpg",
+      "images/sentakuki/sentakuki3/sentakuki3-no5.jpg",
+      "images/sentakuki/sentakuki3/sentakuki3-no6.jpg",
+      ],
+      price: "¥20,000",
       category: "洗濯機",
     },
     {
