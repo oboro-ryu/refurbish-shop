@@ -303,7 +303,7 @@ function MainComponent() {
       "images/reizouko/reizouko10/reizouko10-no8.jpg",
       "images/reizouko/reizouko10/reizouko10-no9.jpg",
       ],
-      price: "¥22,000",
+      price: "¥19,000",
       category: "冷蔵庫",
     },
   ];
