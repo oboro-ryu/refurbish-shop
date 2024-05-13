@@ -204,7 +204,7 @@ function MainComponent() {
     },
     {
       id: 13,
-      name: "SHARP 8kg 2019年",
+      name: "SHARP 8kg 2019年製",
       images: [
       "images/sentakuki/sentakuki5/sentakuki5-no1.jpg",
       "images/sentakuki/sentakuki5/sentakuki5-no2.jpg",
@@ -221,7 +221,7 @@ function MainComponent() {
     },
     {
       id: 14,
-      name: "YAMADA 7kg 2022年",
+      name: "YAMADA 7kg 2022年製",
       images: [
       "images/sentakuki/sentakuki6/sentakuki6-no1.jpg",
       "images/sentakuki/sentakuki6/sentakuki6-no2.jpg",
@@ -233,6 +233,55 @@ function MainComponent() {
       "images/sentakuki/sentakuki6/sentakuki6-no8.jpg",
       ],
       price: "¥27,000",
+      category: "洗濯機",
+    },
+    {
+      id: 15,
+      name: "-----------------",
+      images: [
+      "images/sentakuki/sentakuki7/sentakuki7-no1.jpg",
+      "images/sentakuki/sentakuki7/sentakuki7-no2.jpg",
+      "images/sentakuki/sentakuki7/sentakuki7-no3.jpg",
+      "images/sentakuki/sentakuki7/sentakuki7-no4.jpg",
+      "images/sentakuki/sentakuki7/sentakuki7-no5.jpg",
+      "images/sentakuki/sentakuki7/sentakuki7-no6.jpg",
+      "images/sentakuki/sentakuki7/sentakuki7-no7.jpg",
+      "images/sentakuki/sentakuki7/sentakuki7-no8.jpg",
+      ],
+      price: "¥19,000",
+      category: "洗濯機",
+    },
+    {
+      id: 16,
+      name: "SHARP 5ドア 2018年製(液晶気泡あり)",
+      images: [
+      "images/reizouko/reizouko9/reizouko9-no1.jpg",
+      "images/reizouko/reizouko9/reizouko9-no2.jpg",
+      "images/reizouko/reizouko9/reizouko9-no3.jpg",
+      "images/reizouko/reizouko9/reizouko9-no4.jpg",
+      "images/reizouko/reizouko9/reizouko9-no5.jpg",
+      "images/reizouko/reizouko9/reizouko9-no6.jpg",
+      "images/reizouko/reizouko9/reizouko9-no7.jpg",
+      "images/reizouko/reizouko9/reizouko9-no8.jpg",
+      "images/reizouko/reizouko9/reizouko9-no9.jpg",
+      ],
+      price: "¥88,000",
+      category: "冷蔵庫",
+    },
+    {
+      id: 17,
+      name: "TOSHIBA 4.5kg 2019年製",
+      images: [
+      "images/sentakuki/sentakuki8/sentakuki8-no1.jpg",
+      "images/sentakuki/sentakuki8/sentakuki8-no2.jpg",
+      "images/sentakuki/sentakuki8/sentakuki8-no3.jpg",
+      "images/sentakuki/sentakuki8/sentakuki8-no4.jpg",
+      "images/sentakuki/sentakuki8/sentakuki8-no5.jpg",
+      "images/sentakuki/sentakuki8/sentakuki8-no6.jpg",
+      "images/sentakuki/sentakuki8/sentakuki8-no7.jpg",
+      "images/sentakuki/sentakuki8/sentakuki8-no8.jpg",
+      ],
+      price: "¥19,000",
       category: "洗濯機",
     },
   ];
