@@ -418,6 +418,19 @@ function MainComponent() {
       price: "¥19,000",
       category: "洗濯機",
     },
+    {
+      id: 26,
+      name: "Panasonic 6kg 2018年",
+      images: [
+        "images/sentakuki/sentakuki11/sentakuki11-no1.jpg",
+        "images/sentakuki/sentakuki11/sentakuki11-no2.jpg",
+        "images/sentakuki/sentakuki11/sentakuki11-no3.jpg",
+        "images/sentakuki/sentakuki11/sentakuki11-no4.jpg",
+        "images/sentakuki/sentakuki11/sentakuki11-no5.jpg",
+        ],
+      price: "¥19,000",
+      category: "洗濯機",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
