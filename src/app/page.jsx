@@ -371,6 +371,21 @@ function MainComponent() {
       ],
       price: "¥20,000",
       category: "冷蔵庫",
+    {
+      id: 23,
+      name: "アイリス 2020年製",
+      images: [
+      "images/reizouko/reizouko15/reizouko15-no1.jpg",
+      "images/reizouko/reizouko15/reizouko15-no2.jpg",
+      "images/reizouko/reizouko15/reizouko15-no3.jpg",
+      "images/reizouko/reizouko15/reizouko15-no4.jpg",
+      "images/reizouko/reizouko15/reizouko15-no5.jpg",
+      "images/reizouko/reizouko15/reizouko15-no6.jpg",
+      "images/reizouko/reizouko15/reizouko15-no7.jpg",
+      "images/reizouko/reizouko15/reizouko15-no8.jpg",
+      ],
+      price: "¥22,000",
+      category: "冷蔵庫",
     },
   ];
 
