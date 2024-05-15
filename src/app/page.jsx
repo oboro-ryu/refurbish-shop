@@ -388,6 +388,21 @@ function MainComponent() {
       price: "¥22,000",
       category: "冷蔵庫",
     },
+    {
+      id: 24,
+      name: "ハイセンス 4.5kg 2019年",
+      images: [
+        "images/sentakuki/sentakuki9/sentakuki8-no1.jpg",
+        "images/sentakuki/sentakuki9/sentakuki8-no2.jpg",
+        "images/sentakuki/sentakuki9/sentakuki8-no3.jpg",
+        "images/sentakuki/sentakuki9/sentakuki8-no4.jpg",
+        "images/sentakuki/sentakuki9/sentakuki8-no5.jpg",
+        "images/sentakuki/sentakuki9/sentakuki8-no6.jpg",
+        "images/sentakuki/sentakuki9/sentakuki8-no7.jpg",
+        ],
+      price: "¥17,000",
+      category: "洗濯機",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
