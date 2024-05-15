@@ -424,7 +424,7 @@ function MainComponent() {
         <span className="text-[#333]">¥100,000</span>
       </div>
       <div className="text-center font-semibold text-lg mb-4">
-        選択中の金額: ¥{priceFilter.toLocaleString()}
+        予算: ¥{priceFilter.toLocaleString()}
       </div>
       <div className="container mx-auto p-4">
         {selectedProduct ? (
