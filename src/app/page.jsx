@@ -83,7 +83,7 @@ function MainComponent() {
     },
     {
       id: 6,
-      name: "ハイアール 2ドア 2022年※美品",
+      name: "ハイアール 2ドア 2022年製※美品",
       images: [
       "images/reizouko/reizouko3/reizouko3-no1.jpg",
       "images/reizouko/reizouko3/reizouko3-no2.jpg",
@@ -98,7 +98,7 @@ function MainComponent() {
     },
     {
       id: 7,
-      name: "アイリス 2ドア 2022年※美品",
+      name: "アイリス 2ドア 2022年製※美品",
       images: [
       "images/reizouko/reizouko4/reizouko4-no1.jpg",
       "images/reizouko/reizouko4/reizouko4-no2.jpg",
@@ -115,7 +115,7 @@ function MainComponent() {
     },
     {
       id: 8,
-      name: "コンフィー 2ドア 2023年※美品",
+      name: "コンフィー 2ドア 2023年製※美品",
       images: [
       "images/reizouko/reizouko5/reizouko5-no1.jpg",
       "images/reizouko/reizouko5/reizouko5-no2.jpg",
@@ -135,7 +135,7 @@ function MainComponent() {
     },
     {
       id: 9,
-      name: "TOSHIBA 2ドア 2019年",
+      name: "TOSHIBA 2ドア 2019年製",
       images: [
       "images/reizouko/reizouko6/reizouko6-no1.jpg",
       "images/reizouko/reizouko6/reizouko6-no2.jpg",
@@ -153,7 +153,7 @@ function MainComponent() {
     },
     {
       id: 10,
-      name: "SHARP 2ドア 2021年",
+      name: "SHARP 2ドア 2021年製",
       images: [
       "images/reizouko/reizouko7/reizouko7-no1.jpg",
       "images/reizouko/reizouko7/reizouko7-no2.jpg",
@@ -170,7 +170,7 @@ function MainComponent() {
     },
     {
       id: 11,
-      name: "AQUA 2ドア 2019年",
+      name: "AQUA 2ドア 2019年製",
       images: [
       "images/reizouko/reizouko8/reizouko8-no1.jpg",
       "images/reizouko/reizouko8/reizouko8-no2.jpg",
@@ -291,7 +291,7 @@ function MainComponent() {
     },
     {
       id: 18,
-      name: "SHARP 2ドア 2020年",
+      name: "SHARP 2ドア 2020年製",
       images: [
       "images/reizouko/reizouko10/reizouko10-no1.jpg",
       "images/reizouko/reizouko10/reizouko10-no2.jpg",
@@ -308,7 +308,7 @@ function MainComponent() {
     },
     {
       id: 19,
-      name: "Panasonic 2ドア 2020年",
+      name: "Panasonic 2ドア 2020年製",
       images: [
       "images/reizouko/reizouko11/reizouko11-no1.jpg",
       "images/reizouko/reizouko11/reizouko11-no2.jpg",
@@ -325,7 +325,7 @@ function MainComponent() {
     },
     {
       id: 20,
-      name: "A-Stage 1ドア 2018年",
+      name: "A-Stage 1ドア 2018年製",
       images: [
       "images/reizouko/reizouko12/reizouko12-no1.jpg",
       "images/reizouko/reizouko12/reizouko12-no2.jpg",
@@ -340,7 +340,7 @@ function MainComponent() {
     },
     {
       id: 21,
-      name: "アビテラックス ミニ2ドア 2015年",
+      name: "アビテラックス ミニ2ドア 2015年製",
       images: [
       "images/reizouko/reizouko13/reizouko13-no1.jpg",
       "images/reizouko/reizouko13/reizouko13-no2.jpg",
@@ -420,7 +420,7 @@ function MainComponent() {
     },
     {
       id: 26,
-      name: "Panasonic 6kg 2018年",
+      name: "Panasonic 6kg 2018年製",
       images: [
         "images/sentakuki/sentakuki11/sentakuki11-no1.jpg",
         "images/sentakuki/sentakuki11/sentakuki11-no2.jpg",
@@ -429,6 +429,21 @@ function MainComponent() {
         "images/sentakuki/sentakuki11/sentakuki11-no5.jpg",
         ],
       price: "¥19,000",
+      category: "洗濯機",
+    },
+    {
+      id: 27,
+      name: "HITACHI 7kg 2020年製",
+      images: [
+        "images/sentakuki/sentakuki12/sentakuki12-no1.jpg",
+        "images/sentakuki/sentakuki12/sentakuki12-no2.jpg",
+        "images/sentakuki/sentakuki12/sentakuki12-no3.jpg",
+        "images/sentakuki/sentakuki12/sentakuki12-no4.jpg",
+        "images/sentakuki/sentakuki12/sentakuki12-no5.jpg",
+        "images/sentakuki/sentakuki12/sentakuki12-no6.jpg",
+        "images/sentakuki/sentakuki12/sentakuki12-no7.jpg",
+        ],
+      price: "¥32,000",
       category: "洗濯機",
     },
   ];
