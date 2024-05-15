@@ -354,6 +354,24 @@ function MainComponent() {
       price: "¥4,000",
       category: "冷蔵庫",
     },
+    {
+      id: 22,
+      name: "三菱 2019年製",
+      images: [
+      "images/reizouko/reizouko14/reizouko14-no1.jpg",
+      "images/reizouko/reizouko14/reizouko14-no2.jpg",
+      "images/reizouko/reizouko14/reizouko14-no3.jpg",
+      "images/reizouko/reizouko14/reizouko14-no4.jpg",
+      "images/reizouko/reizouko14/reizouko14-no5.jpg",
+      "images/reizouko/reizouko14/reizouko14-no6.jpg",
+      "images/reizouko/reizouko14/reizouko14-no7.jpg",
+      "images/reizouko/reizouko14/reizouko14-no8.jpg",
+      "images/reizouko/reizouko14/reizouko14-no9.jpg",
+      "images/reizouko/reizouko14/reizouko14-no10.jpg",
+      ],
+      price: "¥20,000",
+      category: "冷蔵庫",
+    },
   ];
 
   const [selectedProduct, setSelectedProduct] = useState(null);
