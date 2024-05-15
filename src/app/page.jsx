@@ -371,6 +371,7 @@ function MainComponent() {
       ],
       price: "¥20,000",
       category: "冷蔵庫",
+    },
     {
       id: 23,
       name: "アイリス 2020年製",
