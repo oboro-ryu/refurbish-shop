@@ -7,7 +7,7 @@ function MainComponent() {
       id: 1,
       name: "Panasonic 2ドア マットビターブラウン 2020年製※素材上やや傷あり",
       images: [
-        "images/reizouko/reizouko1/reizouko1-no1.png",
+        "images/reizouko/reizouko1/reizouko1-no1.jpg",
         "images/reizouko/reizouko1/reizouko1-no2.jpg",
         "images/reizouko/reizouko1/reizouko1-no3.jpg",
         "images/reizouko/reizouko1/reizouko1-no4.jpg",
