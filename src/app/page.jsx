@@ -86,7 +86,7 @@ function MainComponent() {
       name: "ハイアール 2ドア 2022年製※美品",
       images: [
       "images/reizouko/reizouko3/reizouko3-no1.jpg",
-      "images/reizouko/reizouko3/reizouko3-no2.jpg",
+      // "images/reizouko/reizouko3/reizouko3-no2.jpg",
       "images/reizouko/reizouko3/reizouko3-no3.jpg",
       "images/reizouko/reizouko3/reizouko3-no4.jpg",
       "images/reizouko/reizouko3/reizouko3-no5.jpg",
