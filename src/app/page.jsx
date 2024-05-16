@@ -332,7 +332,6 @@ function MainComponent() {
       "images/reizouko/reizouko12/reizouko12-no4.jpg",
       "images/reizouko/reizouko12/reizouko12-no5.jpg",
       "images/reizouko/reizouko12/reizouko12-no6.jpg",
-      "images/reizouko/reizouko12/reizouko12-no7.jpg",
       ],
       price: "¥4,000",
       category: "冷蔵庫",
