@@ -336,22 +336,22 @@ function MainComponent() {
       price: "¥4,000",
       category: "冷蔵庫",
     },
-    {
-      id: 21,
-      name: "アビテラックス ミニ2ドア 2015年製",
-      images: [
-      "images/reizouko/reizouko13/reizouko13-no1.jpg",
-      "images/reizouko/reizouko13/reizouko13-no2.jpg",
-      "images/reizouko/reizouko13/reizouko13-no3.jpg",
-      "images/reizouko/reizouko13/reizouko13-no4.jpg",
-      "images/reizouko/reizouko13/reizouko13-no5.jpg",
-      "images/reizouko/reizouko13/reizouko13-no6.jpg",
-      "images/reizouko/reizouko13/reizouko13-no7.jpg",
-      "images/reizouko/reizouko13/reizouko13-no8.jpg",
-      ],
-      price: "¥4,000",
-      category: "冷蔵庫",
-    },
+    // {
+    //   id: 21,
+    //   name: "アビテラックス ミニ2ドア 2015年製",
+    //   images: [
+    //   "images/reizouko/reizouko13/reizouko13-no1.jpg",
+    //   "images/reizouko/reizouko13/reizouko13-no2.jpg",
+    //   "images/reizouko/reizouko13/reizouko13-no3.jpg",
+    //   "images/reizouko/reizouko13/reizouko13-no4.jpg",
+    //   "images/reizouko/reizouko13/reizouko13-no5.jpg",
+    //   "images/reizouko/reizouko13/reizouko13-no6.jpg",
+    //   "images/reizouko/reizouko13/reizouko13-no7.jpg",
+    //   "images/reizouko/reizouko13/reizouko13-no8.jpg",
+    //   ],
+    //   price: "¥4,000",
+    //   category: "冷蔵庫",
+    // },
     {
       id: 22,
       name: "三菱 2019年製",
@@ -416,19 +416,19 @@ function MainComponent() {
       price: "¥19,000",
       category: "洗濯機",
     },
-    {
-      id: 26,
-      name: "Panasonic 6kg 2018年製",
-      images: [
-        "images/sentakuki/sentakuki11/sentakuki11-no1.jpg",
-        "images/sentakuki/sentakuki11/sentakuki11-no2.jpg",
-        "images/sentakuki/sentakuki11/sentakuki11-no3.jpg",
-        "images/sentakuki/sentakuki11/sentakuki11-no4.jpg",
-        "images/sentakuki/sentakuki11/sentakuki11-no5.jpg",
-        ],
-      price: "¥19,000",
-      category: "洗濯機",
-    },
+    // {
+    //   id: 26,
+    //   name: "Panasonic 6kg 2018年製",
+    //   images: [
+    //     "images/sentakuki/sentakuki11/sentakuki11-no1.jpg",
+    //     "images/sentakuki/sentakuki11/sentakuki11-no2.jpg",
+    //     "images/sentakuki/sentakuki11/sentakuki11-no3.jpg",
+    //     "images/sentakuki/sentakuki11/sentakuki11-no4.jpg",
+    //     "images/sentakuki/sentakuki11/sentakuki11-no5.jpg",
+    //     ],
+    //   price: "¥19,000",
+    //   category: "洗濯機",
+    // },
     {
       id: 27,
       name: "HITACHI 7kg 2020年製",
@@ -583,5 +583,6 @@ function MainComponent() {
     </div>
   );
 }
+
 
 export default MainComponent;
