@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react"; 
 
-function MainComponent() {
+function MainComponent()  {
   const products = [
     {
       id: 1,
@@ -234,23 +234,23 @@ function MainComponent() {
       price: "¥27,000",
       category: "洗濯機",
     },
-    {
-      id: 15,
-      name: "TOSHIBA 4.5kg 2023年製※美品",
-      images: [
-      "images/sentakuki/sentakuki7/sentakuki7-no1.jpg",
-      "images/sentakuki/sentakuki7/sentakuki7-no2.jpg",
-      "images/sentakuki/sentakuki7/sentakuki7-no3.jpg",
-      "images/sentakuki/sentakuki7/sentakuki7-no4.jpg",
-      "images/sentakuki/sentakuki7/sentakuki7-no5.jpg",
-      "images/sentakuki/sentakuki7/sentakuki7-no6.jpg",
-      "images/sentakuki/sentakuki7/sentakuki7-no7.jpg",
-      "images/sentakuki/sentakuki7/sentakuki7-no8.jpg",
-      "images/sentakuki/sentakuki7/sentakuki7-no9.jpg",
-      ],
-      price: "¥25,000",
-      category: "洗濯機",
-    },
+    // {
+    //   id: 15,
+    //   name: "TOSHIBA 4.5kg 2023年製※美品",
+    //   images: [
+    //   "images/sentakuki/sentakuki7/sentakuki7-no1.jpg",
+    //   "images/sentakuki/sentakuki7/sentakuki7-no2.jpg",
+    //   "images/sentakuki/sentakuki7/sentakuki7-no3.jpg",
+    //   "images/sentakuki/sentakuki7/sentakuki7-no4.jpg",
+    //   "images/sentakuki/sentakuki7/sentakuki7-no5.jpg",
+    //   "images/sentakuki/sentakuki7/sentakuki7-no6.jpg",
+    //   "images/sentakuki/sentakuki7/sentakuki7-no7.jpg",
+    //   "images/sentakuki/sentakuki7/sentakuki7-no8.jpg",
+    //   "images/sentakuki/sentakuki7/sentakuki7-no9.jpg",
+    //   ],
+    //   price: "¥25,000",
+    //   category: "洗濯機",
+    // },
     {
       id: 16,
       name: "SHARP 5ドア 2018年製(液晶気泡あり)",
@@ -352,24 +352,24 @@ function MainComponent() {
     //   price: "¥4,000",
     //   category: "冷蔵庫",
     // },
-    {
-      id: 22,
-      name: "三菱 2019年製",
-      images: [
-      "images/reizouko/reizouko14/reizouko14-no1.jpg",
-      "images/reizouko/reizouko14/reizouko14-no2.jpg",
-      "images/reizouko/reizouko14/reizouko14-no3.jpg",
-      "images/reizouko/reizouko14/reizouko14-no4.jpg",
-      "images/reizouko/reizouko14/reizouko14-no5.jpg",
-      "images/reizouko/reizouko14/reizouko14-no6.jpg",
-      "images/reizouko/reizouko14/reizouko14-no7.jpg",
-      "images/reizouko/reizouko14/reizouko14-no8.jpg",
-      "images/reizouko/reizouko14/reizouko14-no9.jpg",
-      "images/reizouko/reizouko14/reizouko14-no10.jpg",
-      ],
-      price: "¥20,000",
-      category: "冷蔵庫",
-    },
+    // {
+    //   id: 22,
+    //   name: "三菱 2019年製",
+    //   images: [
+    //   "images/reizouko/reizouko14/reizouko14-no1.jpg",
+    //   "images/reizouko/reizouko14/reizouko14-no2.jpg",
+    //   "images/reizouko/reizouko14/reizouko14-no3.jpg",
+    //   "images/reizouko/reizouko14/reizouko14-no4.jpg",
+    //   "images/reizouko/reizouko14/reizouko14-no5.jpg",
+    //   "images/reizouko/reizouko14/reizouko14-no6.jpg",
+    //   "images/reizouko/reizouko14/reizouko14-no7.jpg",
+    //   "images/reizouko/reizouko14/reizouko14-no8.jpg",
+    //   "images/reizouko/reizouko14/reizouko14-no9.jpg",
+    //   "images/reizouko/reizouko14/reizouko14-no10.jpg",
+    //   ],
+    //   price: "¥20,000",
+    //   category: "冷蔵庫",
+    // },
     {
       id: 23,
       name: "アイリス 2020年製",
@@ -401,21 +401,21 @@ function MainComponent() {
       price: "¥17,000",
       category: "洗濯機",
     },
-    {
-      id: 25,
-      name: "アイリス 6kg 2020年製(フタ少しヒビあり)",
-      images: [
-        "images/sentakuki/sentakuki10/sentakuki10-no1.jpg",
-        "images/sentakuki/sentakuki10/sentakuki10-no2.jpg",
-        "images/sentakuki/sentakuki10/sentakuki10-no3.jpg",
-        "images/sentakuki/sentakuki10/sentakuki10-no4.jpg",
-        "images/sentakuki/sentakuki10/sentakuki10-no5.jpg",
-        "images/sentakuki/sentakuki10/sentakuki10-no6.jpg",
-        "images/sentakuki/sentakuki10/sentakuki10-no7.jpg",
-        ],
-      price: "¥19,000",
-      category: "洗濯機",
-    },
+    // {
+    //   id: 25,
+    //   name: "アイリス 6kg 2020年製(フタ少しヒビあり)",
+    //   images: [
+    //     "images/sentakuki/sentakuki10/sentakuki10-no1.jpg",
+    //     "images/sentakuki/sentakuki10/sentakuki10-no2.jpg",
+    //     "images/sentakuki/sentakuki10/sentakuki10-no3.jpg",
+    //     "images/sentakuki/sentakuki10/sentakuki10-no4.jpg",
+    //     "images/sentakuki/sentakuki10/sentakuki10-no5.jpg",
+    //     "images/sentakuki/sentakuki10/sentakuki10-no6.jpg",
+    //     "images/sentakuki/sentakuki10/sentakuki10-no7.jpg",
+    //     ],
+    //   price: "¥19,000",
+    //   category: "洗濯機",
+    // },
     // {
     //   id: 26,
     //   name: "Panasonic 6kg 2018年製",
